@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.items__wrap {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.items {
+  display: flex;
+  font-size: 0;
+  height: 100vh;
+  position: relative;
+  left: 0;
+}
+
+.item {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-left: 1px solid rgba(0,0,0,0.05);
+  height: 100vh;
+  width: 100vw;
+}
+
+.slider__wrap {
+  background: linear-gradient(to top, rgba(0,0,0, 0.3), transparent);
+  display: flex;
+  align-items: center;
+  padding: 20px 40px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.slider__nav-item {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 15px;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+/* Webkit */
+
+.slider::-webkit-slider-runnable-track {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0;
+  cursor: pointer;
+  height: 1px;
+  width: 100%;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  height: 15px;
+  margin-top: -7px;
+  width: 15px;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+  background: #fff;
+}
+
+/* Mozilla */
+
+.slider::-moz-focus-outer {
+  border: 0;
+}
+
+.slider::-moz-range-track {
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  height: 1px;
+  width: 100%;
+}
+
+.slider::-moz-range-thumb {
+  background: #fff;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+ /* IE */
+
+.slider::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: 1px;
+  width: 100%;
+}
+
+.slider::-ms-fill-lower,
+.slider::-ms-fill-upper {
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.slider::-ms-thumb {
+  box-shadow: none;
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  height: 1px;
+}
+
+.slider:focus::-ms-fill-lower,
+.slider:focus::-ms-fill-upper {
+  background: #fff;
+}
